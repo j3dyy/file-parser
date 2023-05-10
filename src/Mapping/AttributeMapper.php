@@ -24,7 +24,7 @@ class AttributeMapper implements Mapper
 
     public function map(array $data, ValueConverter $valueConverter): object
     {
-        if ($this->mappings == null){
+        if ($this->mappings == null) {
             $this->build($data);
         }
 
@@ -87,7 +87,7 @@ class AttributeMapper implements Mapper
 
             $strategy->setValue(
                 $object,
-                $converter->convert($data[$strategy->getIndex()] , $strategy->getType())
+                $converter->convert($data[$strategy->getIndex()], $strategy->getType())
             );
 
         }

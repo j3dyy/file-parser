@@ -37,7 +37,7 @@ class CsvParser implements Parser
             $this->options->enclosure,
             $this->options->escape
         )) != false) {
-            if ($row[0] == null){
+            if ($row[0] == null) {
                 continue ;
             }
             yield  $this->options->mapper->map(

@@ -12,8 +12,6 @@ use PHPUnit\Framework\TestCase;
 
 class ParserTest extends TestCase
 {
-
-
     public function testRawArrayMapping()
     {
         $parser = new CsvParser();
@@ -59,7 +57,7 @@ class ParserTest extends TestCase
         $array = $parser->all();
 
         $this->assertIsArray($array);
-        $this->assertArrayHasKey('foo',$array[0]);
+        $this->assertArrayHasKey('foo', $array[0]);
     }
 
     public function testEmptySignatureProducesRawArray()
